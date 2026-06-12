@@ -4,25 +4,9 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText } from "gsap/all";
 import { useRef, useState } from "react";
 import Footer from "./Footer";
-import {
-    Rocket,
-    BookOpen,
-    ArrowDown,
-    Zap,
-    Palette,
-    Gauge,
-    Crosshair,
-    Orbit,
-    Settings2,
-    MousePointer2,
-    Smartphone,
-    ScanSearch,
-    Sparkles,
-    Library,
-    ArrowRight,
-    ArrowUpRight,
-} from "lucide-react";
-import Header from "./Header";
+import { PiRocketLaunch } from "react-icons/pi";
+import { ArrowDownIcon, ArrowRightIcon, ArrowUpRightIcon, AtomIcon, BookOpenIcon, BooksIcon, DeviceMobileCameraIcon, LightningIcon, PaletteIcon, RocketLaunchIcon, ScanIcon, SlidersHorizontalIcon, SparkleIcon, SpeedometerIcon, SpiralIcon } from "@phosphor-icons/react";
+import { CursorIcon } from "@phosphor-icons/react/dist/ssr";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
@@ -291,7 +275,7 @@ export function GsapBox() {
 
     return (
         <div className="bg-gradient-to-b from-gray-900 via-black to-gray-900 text-white overflow-hidden relative">
-            <Header />
+
             {/* سکشن اول - معرفی */}
             <section className="min-h-screen w-full flex flex-col justify-center items-center p-8 relative overflow-hidden">
 
@@ -313,12 +297,12 @@ export function GsapBox() {
 
                     <div className="flex flex-col md:flex-row gap-4 justify-center mb-16">
                         <button className="px-8 py-4 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-xl font-semibold text-lg hover:shadow-2xl hover:shadow-blue-500/40 transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 flex items-center gap-2">
-                            <Rocket size={20} />
+                            <RocketLaunchIcon size={20} weight="duotone" />
                             Get Started Now
                         </button>
 
                         <button className="px-8 py-4 bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl font-semibold text-lg hover:bg-gray-700/50 transition-all duration-300 flex items-center gap-2">
-                            <BookOpen size={20} />
+                            <BookOpenIcon size={20} weight="duotone" />
                             View Examples
                         </button>
                     </div>
@@ -334,7 +318,9 @@ export function GsapBox() {
                             ))}
                         </div>
                         <p className="text-gray-400 animate-bounce flex items-center justify-center gap-2">
-                            <ArrowDown size={18} />
+                            <ArrowDownIcon size={20} weight="duotone" />
+
+
                             Scroll down to explore
                         </p>
                     </div>
@@ -401,19 +387,19 @@ export function GsapBox() {
                             </p>
                             <div className="flex flex-wrap justify-center gap-6 mb-12">
                                 <div className="px-6 py-3 bg-gray-800/50 rounded-lg border border-gray-700 flex gap-2 items-center">
-                                    <Zap size={18} className="text-blue-400" /> Real-time rendering
+                                    <LightningIcon size={20} weight="duotone" className="text-blue-400" /> Real-time rendering
                                 </div>
                                 <div className="px-6 py-3 bg-gray-800/50 rounded-lg border border-gray-700 flex gap-2 items-center">
-                                    <Palette size={18} className="text-cyan-400" /> Customizable effects
+                                    <PaletteIcon size={20} weight="duotone" className="text-cyan-400" /> Customizable effects
                                 </div>
                                 <div className="px-6 py-3 bg-gray-800/50 rounded-lg border border-gray-700 flex gap-2 items-center">
-                                    <Gauge size={18} className="text-purple-400" /> 60 FPS performance
+                                    <SpeedometerIcon size={20} weight="duotone" className="text-purple-400" /> 60 FPS performance
                                 </div>
                             </div>
                             <button className="section-button px-10 py-5 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-full font-semibold text-lg hover:shadow-2xl hover:shadow-blue-500/40 transition-all duration-300 group">
                                 <span className="flex items-center gap-3">
                                     Explore Features
-                                    <span className="group-hover:translate-x-2 transition-transform duration-300">→</span>
+                                    <span className="group-hover:translate-x-2 transition-transform duration-300"><ArrowRightIcon size={20} weight="fill" /></span>
                                 </span>
                             </button>
                         </div>
@@ -443,17 +429,17 @@ export function GsapBox() {
                             </p>
                             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 max-w-4xl mx-auto">
                                 <div className="p-6 bg-gray-800/30 rounded-2xl border border-gray-700/50 backdrop-blur-sm">
-                                    <Orbit size={34} className="mx-auto mb-2 text-pink-400" />
+                                    <AtomIcon size={34} weight="duotone" className="mx-auto mb-2 text-pink-400" />
                                     <h4 className="font-semibold mb-2">Precision Control</h4>
                                     <p className="text-gray-400 text-sm">Pixel-perfect animation timing</p>
                                 </div>
                                 <div className="p-6 bg-gray-800/30 rounded-2xl border border-gray-700/50 backdrop-blur-sm">
-                                    <div className="text-3xl mb-2">🌀</div>
+                                    <SpiralIcon size={34} weight="duotone" className="mx-auto mb-2 text-blue-400" />
                                     <h4 className="font-semibold mb-2">Smart Interpolation</h4>
                                     <p className="text-gray-400 text-sm">AI-powered motion smoothing</p>
                                 </div>
                                 <div className="p-6 bg-gray-800/30 rounded-2xl border border-gray-700/50 backdrop-blur-sm">
-                                    <Settings2 size={34} className="mx-auto mb-2 text-cyan-400" />
+                                    <SlidersHorizontalIcon size={34} weight="duotone" className="mx-auto mb-2 text-cyan-400" />
                                     <h4 className="font-semibold mb-2">Real-time Editing</h4>
                                     <p className="text-gray-400 text-sm">See changes as you make them</p>
                                 </div>
@@ -461,8 +447,9 @@ export function GsapBox() {
                             <button className="section-button px-10 py-5 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full font-semibold text-lg hover:shadow-2xl hover:shadow-purple-500/40 transition-all duration-300 group">
                                 <span className="flex items-center gap-3">
                                     View Examples
-                                    <ArrowUpRight
+                                    <ArrowUpRightIcon
                                         size={20}
+                                        weight="fill"
                                         className="group-hover:rotate-45 transition-transform duration-300"
                                     />
                                 </span>
@@ -497,21 +484,21 @@ export function GsapBox() {
                                     <div className="absolute inset-0 bg-gradient-to-r from-emerald-500 to-blue-500 rounded-full blur-xl opacity-30"></div>
                                     <div className="relative px-8 py-4 bg-gray-900/80 backdrop-blur-sm rounded-full border border-gray-700 flex items-center gap-4 flex-wrap justify-center">
                                         <span className="flex items-center gap-2 text-lg">
-                                            <MousePointer2 size={18} />
+                                            <CursorIcon weight="duotone" size={18} />
                                             Mouse Interactions
                                         </span>
 
                                         <span className="mx-2">•</span>
 
                                         <span className="flex items-center gap-2 text-lg">
-                                            <Smartphone size={18} />
+                                            <DeviceMobileCameraIcon weight="duotone" size={18} />
                                             Touch Gestures
                                         </span>
 
                                         <span className="mx-2">•</span>
 
                                         <span className="flex items-center gap-2 text-lg">
-                                            <ScanSearch size={18} />
+                                            <ScanIcon weight="duotone" size={18} />
                                             Scroll Effects
                                         </span>
                                     </div>
@@ -519,7 +506,7 @@ export function GsapBox() {
                                 <button className="section-button px-10 py-5 bg-gradient-to-r from-emerald-600 to-blue-600 rounded-full font-semibold text-lg hover:shadow-2xl hover:shadow-emerald-500/40 transition-all duration-300 group">
                                     <span className="flex items-center gap-3">
                                         Get Started
-                                        <span className="group-hover:scale-125 transition-transform duration-300"><Sparkles size={18} /></span>
+                                        <span className="group-hover:scale-125 transition-transform duration-300"><SparkleIcon size={18} weight="duotone" /></span>
                                     </span>
                                 </button>
                             </div>
@@ -556,16 +543,16 @@ export function GsapBox() {
                     <div className="flex flex-col md:flex-row gap-6 justify-center mb-16">
                         <button className="px-12 py-6 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl font-bold text-lg hover:shadow-2xl hover:shadow-purple-500/40 transition-all duration-300 transform hover:-translate-y-2 hover:scale-105 group">
                             <span className="flex items-center gap-3">
-                                <Rocket size={20} />
+                                <RocketLaunchIcon size={20} weight="duotone" />
                                 Start Free Trial
-                                <span className="group-hover:translate-x-2 transition-transform duration-300"><ArrowRight size={20} /></span>
+                                <span className="group-hover:translate-x-2 transition-transform duration-300"><ArrowRightIcon size={20} weight="fill" /></span>
                             </span>
                         </button>
                         <button className="px-12 py-6 bg-gray-800/50 backdrop-blur-sm border-2 border-gray-700 rounded-2xl font-bold text-lg hover:bg-gray-700/50 transition-all duration-300 group">
                             <span className="flex items-center gap-3">
-                                <BookOpen size={20} />
+                                <BookOpenIcon size={20} weight="duotone" />
                                 View Documentation
-                                <span className="group-hover:rotate-12 transition-transform duration-300"><Library size={20} /></span>
+                                <span className="group-hover:rotate-12 transition-transform duration-300"><BooksIcon size={20} weight="duotone" /></span>
                             </span>
                         </button>
                     </div>
@@ -627,9 +614,8 @@ export function GsapBox() {
                     </div>
                 </div>
 
-                <Footer />
             </section>
-
+            <Footer />
         </div>
     );
 }

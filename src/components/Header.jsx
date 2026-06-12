@@ -1,4 +1,4 @@
-import { Rocket, Menu } from "lucide-react";
+import { ListIcon, RocketLaunchIcon } from "@phosphor-icons/react";
 
 export default function Header() {
     return (
@@ -9,11 +9,11 @@ export default function Header() {
                     {/* Logo */}
                     <div className="flex items-center gap-3 cursor-pointer group">
                         <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-r from-blue-500 to-cyan-500 shadow-lg shadow-cyan-500/30">
-                            <Rocket size={20} />
+                            <RocketLaunchIcon size={20} weight="duotone" />
                         </div>
 
                         <div>
-                            <h3 className="font-bold text-xl tracking-wide">
+                            <h3 className="font-bold text-xl tracking-wide text-white">
                                 MotionLab
                             </h3>
                             <p className="text-xs text-gray-400">
@@ -50,7 +50,7 @@ export default function Header() {
                         </button>
 
                         <button className="md:hidden">
-                            <Menu />
+                            <ListIcon size={32} color="#ffff"/>
                         </button>
 
                     </div>
