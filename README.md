@@ -1,20 +1,35 @@
-This project is primarily designed to showcase the developer's or programmer's ability to create heavy animations and motion effects. Less emphasis has been placed on logic and optimization in this project.
-
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Creative React + GSAP Landing Page
+This project is a high-fidelity visual experience designed specifically for premium, aesthetics-focused websites. The primary core of this project is to deliver stunning motions, immersive animations, and rich visual effects.
 
-Currently, two official plugins are available:
+📌 Note on Performance: The main focus here is visual storytelling and complex animations rather than raw loading speed. Visual impact is the first priority; speed is secondary.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This is a standalone, interactive home landing page crafted to showcase what's possible when combining modern web development with advanced motion design.
 
-## React Compiler
+🛠️ Tech Stack & Tools
+Core: React
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+Animation: GSAP (GreenSock Animation Platform)
 
-Note: This will impact Vite dev & build performances.
+Styling: Tailwind CSS
 
-## Expanding the ESLint configuration
+Icons: Phosphor Icons
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+#ترجمه فارسی -----------------
+
+صفحه فرود خلاقانه با React + GSAP
+این پروژه یک تجربه بصری فوق‌العاده باکیفیت (High-fidelity) است که به طور اختصاصی برای وب‌سایت‌های لوکس و زیبایی‌محور طراحی شده است. هسته اصلی این پروژه، ارائه موشن‌های خیره‌کننده، انیمیشن‌های غوطه‌ورکننده (چشم‌نواز) و افکت‌های بصری غنی است.
+
+📌 نکته‌ای درباره پرفورمنس (کارایی): تمرکز اصلی در اینجا روی روایت داستان بصری (Visual Storytelling) و انیمیشن‌های پیچیده است، نه صرفاً سرعت خام لود شدن سایت. تاثیرگذاری بصری اولویت اول است و سرعت در اولویت دوم قرار دارد.
+
+این برنامه یک لندینگ پیج (صفحه فرود) تک‌صفحه‌ای و تعاملی است که برای نمایش پتانسیلِ ترکیب توسعه وب مدرن با طراحی موشن پیشرفته خلق شده است.
+
+🛠️ تکنولوژی‌ها و ابزارها
+هسته اصلی: React
+
+انیمیشن: GSAP (پلتفرم انیمیشن GreenSock)
+
+استایل‌دهی: Tailwind CSS
+
+آیکون‌ها: Phosphor Icons

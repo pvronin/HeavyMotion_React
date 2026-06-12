@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react';
-import gsap from 'gsap';
+import React from 'react';
+
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { GsapBox } from './components/Gsapbox';
 

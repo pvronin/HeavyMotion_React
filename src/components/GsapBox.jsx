@@ -22,6 +22,7 @@ import {
     ArrowRight,
     ArrowUpRight,
 } from "lucide-react";
+import Header from "./Header";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
@@ -290,7 +291,7 @@ export function GsapBox() {
 
     return (
         <div className="bg-gradient-to-b from-gray-900 via-black to-gray-900 text-white overflow-hidden relative">
-
+            <Header />
             {/* سکشن اول - معرفی */}
             <section className="min-h-screen w-full flex flex-col justify-center items-center p-8 relative overflow-hidden">
 
@@ -605,7 +606,7 @@ export function GsapBox() {
                                 <input
                                     type="email"
                                     placeholder="Enter your email"
-                                    className="px-6 py-4 bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl w-64 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20"
+                                    className="px-6 py-4 bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl w-64 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all duration-300"
                                 />
                                 <button className="px-8 py-4 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-xl font-semibold hover:shadow-xl hover:shadow-blue-500/30 transition-all duration-300">
                                     Subscribe
