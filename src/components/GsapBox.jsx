@@ -4,13 +4,12 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText } from "gsap/all";
 import { useRef, useState } from "react";
 import Footer from "./Footer";
-import { PiRocketLaunch } from "react-icons/pi";
 import { ArrowDownIcon, ArrowRightIcon, ArrowUpRightIcon, AtomIcon, BookOpenIcon, BooksIcon, DeviceMobileCameraIcon, LightningIcon, PaletteIcon, RocketLaunchIcon, ScanIcon, SlidersHorizontalIcon, SparkleIcon, SpeedometerIcon, SpiralIcon } from "@phosphor-icons/react";
 import { CursorIcon } from "@phosphor-icons/react/dist/ssr";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
-export function GsapBox() {
+export  function GsapBox() {
     const h2Ref = useRef();
     const pRef = useRef();
     const outerscroller = useRef();
